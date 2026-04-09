@@ -14,7 +14,7 @@ This is a browser based calculator built entirely with TypeScript, HTML, and CSS
 
 1.Clone the Repository:
 ```bash
-git clone https://github.com/Nickoloke/your-repo.git
+git clone https://github.com/Nickoloke/web-calculator.git
 ```
 2.Navigate to Project Root Directory:
 3.Install dependencies:
