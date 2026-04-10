@@ -10,29 +10,47 @@
 
     <div id="Calculator">
       <input id="display" readonly>
-      <div id="buttons">
-        <button onclick="clearDisplay()" class="operator">C</button>
-        <button onclick="appendToDisplay('(')" class="operator">(</button>
-        <button onclick="appendToDisplay(')')" class="operator">)</button>
-        <button onclick="appendToDisplay('/')" class="operator">/</button>
-        <button onclick="appendToDisplay('7')">7</button>
-        <button onclick="appendToDisplay('8')">8</button>
-        <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('*')" class="operator">*</button>
-        <button onclick="appendToDisplay('4')">4</button>
-        <button onclick="appendToDisplay('5')">5</button>
-        <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="appendToDisplay('-')" class="operator">-</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('+')" class="operator">+</button>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="DeleteFromDisplay()">Del</button>
-        <button onclick="calculate()" class="operator">=</button>
+      
+      <div class="keypad">
+        
+        <div id="advanced-buttons">
+          <button onclick="appendToDisplay('sin(')" class="adv-btn">sin</button>
+          <button onclick="appendToDisplay('cos(')" class="adv-btn">cos</button>
+          <button onclick="appendToDisplay('tan(')" class="adv-btn">tan</button>
+          <button onclick="appendToDisplay('log(')" class="adv-btn">log</button>
+          <button onclick="appendToDisplay('√(')" class="adv-btn">√</button>
+          <button onclick="appendToDisplay('^')" class="adv-btn">^</button>
+          <button onclick="appendToDisplay('π')" class="adv-btn">π</button>
+          <button onclick="appendToDisplay('e')" class="adv-btn">e</button>
+          <button onclick="appendToDisplay('²')" class="adv-btn">²</button>
+          <button onclick="appendToDisplay('³')" class="adv-btn">³</button>
+        </div>
+        
+        <div id="buttons">
+          <button onclick="clearDisplay()" class="operator">C</button>
+          <button onclick="appendToDisplay('(')" class="operator">(</button>
+          <button onclick="appendToDisplay(')')" class="operator">)</button>
+          <button onclick="appendToDisplay('/')" class="operator">/</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('*')" class="operator">*</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('-')" class="operator">-</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('+')" class="operator">+</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button onclick="DeleteFromDisplay()">Del</button>
+          <button onclick="calculate()" class="operator">=</button>
+        </div>
+        
+      </div> <div class="arrow" onclick="toggleAdvanced()"></div>
     </div>
-
 
     <script type="module" src="index.ts"></script>
   </body>
